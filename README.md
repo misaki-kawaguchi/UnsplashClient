@@ -64,11 +64,11 @@ SPやDB、WebAPIなどアプリ外部のデータとのインターフェース�
 
 3.2 画像検索画面の作成
 
-- StateHolder
+- State
 - ViewModel
 - View
   
 3.3 画像詳細表示の作成
-- StateHolder
+- State
 - ViewModel
 - View
