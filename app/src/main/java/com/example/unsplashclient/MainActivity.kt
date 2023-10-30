@@ -12,6 +12,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.unsplashclient.presentation.ScreenRoute
+import com.example.unsplashclient.presentation.search_photos.SearchPhotosScreen
 import com.example.unsplashclient.presentation.ui.theme.UnsplashClientTheme
 
 class MainActivity : ComponentActivity() {
@@ -28,8 +29,7 @@ class MainActivity : ComponentActivity() {
           ) {
             // 画像検索画面
             composable(route = ScreenRoute.SearchPhotosScreen.route) {
-              // TODO
-              Text(text = "画像検索画面")
+              SearchPhotosScreen()
             }
 
             // 画像詳細表示画面
