@@ -1,5 +1,6 @@
 package com.example.unsplashclient.presentation.search_photos
 
+import android.util.Log
 import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
@@ -19,7 +20,7 @@ class SearchPhotosViewModel @Inject constructor(
   val state: State<SearchPhotosState> = _state
 
   init {
-    searchPhotos("oosaka")
+    searchPhotos("programming")
   }
 
   private fun searchPhotos(query: String) {
