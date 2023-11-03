@@ -5,6 +5,7 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.hilt.navigation.compose.hiltViewModel
+import com.example.unsplashclient.presentation.search_photos.components.PhotoThumbnail
 
 @Composable
 fun SearchPhotosScreen(
@@ -14,7 +15,7 @@ fun SearchPhotosScreen(
 
   LazyColumn {
     items(state.photos) { photo ->
-      Text(text = photo.imageUrl)
+      PhotoThumbnail(photo = photo, onClick = {})
     }
   }
 }
