@@ -4,7 +4,6 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.CircularProgressIndicator
-import androidx.compose.material.Icon
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.material.icons.Icons
@@ -63,6 +62,7 @@ fun PhotoThumbnail(
         imageVector = Icons.Default.Favorite,
         count = photo.likes ?: 0,
         iconTint = Color.Magenta,
+        color = Color.White,
       )
     }
   }
